@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Online Voting System - Homepage</title>
+    <style>
+        .image{
+            top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+        }
+        #loginForm {
+  position:relative;
+  z-index:10;
+}
+
+    </style>
+</head>
+<body>
+    <div id="loginForm">
+    <div id="headerSection">
+    <h1>Welcome to Online Voting System</h1><hr>
+    </div>
+    <div id="bodySection">
+    <form action="login.php" method="POST" >
+        <h1>Login</h1>
+        <input type="number" name="mobile" placeholder="Enter mobile number"><br><br>
+        <input type="password" name="password" placeholder="Enter password"><br><br>
+        <b style="font-weight: bold;font-size: 20px;">Select your role :</b><select id="dropbox" name="role">
+            <option value="1">Voter</option>
+            <option value="2">Group</option>
+        </select><br><br>
+        <button style="color: black;font-weight: bolder;" id="loginbtn">Login</button><br><br>
+        <h3>New user? </h3><a style="text-decoration:none;
+        color:black;
+        font-weight: bolder;
+        padding: 5px 5px 5px 5px;
+        background-color:#3498db;" href="register.html">Register Here!</a>
+    </form>
+</div>
+</div>
+<img src="onlinevoting.jpg" class="image" width="100%" height="100%"/>
+</body>
+</html>
